@@ -57,9 +57,9 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
-  gem 'better_errors'
-  gem 'guard'
-  gem 'guard-livereload'
+  gem 'better_errors','~> 2.4'
+  gem 'guard','~> 2.14', '>=2.14.1'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
 end
 
 group :development do
